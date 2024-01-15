@@ -23,11 +23,6 @@
 :ssl_client_verify_env: HTTP_SSL_CLIENT_VERIFY
 :ssl_client_cert_env: HTTP_SSL_CLIENT_CERT
 
-# webpack dev server settings
-:webpack_dev_server: <%= scope['::katello_devel::webpack_dev_server'] %>
-:webpack_dev_server_https: true
-:assets_debug: false
-
 # Rails Cache type
 :rails_cache_store:
   :type: <%= scope["::katello_devel::rails_cache_store"]["type"] %>
